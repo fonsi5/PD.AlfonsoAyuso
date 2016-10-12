@@ -3,11 +3,11 @@ package es.upm.miw.pd.visitor.figure;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FiguresManager {
+public final class VisitorMain {
 
     private List<Figure> figures;
 
-    public FiguresManager() {
+    public VisitorMain() {
         figures = new ArrayList<>();
     }
 
@@ -16,19 +16,20 @@ public class FiguresManager {
     }
 
     public double totalArea() {
-        double result = 0;
+        CalcuArea ViAre = new CalcuArea();
         for (Figure figure : figures) {
-            result += figure.area();
+            figure.accept(ViAre);
         }
-        return result;
+        return ViAre.getAreaTot();
     }
 
     public double totalNumberOfSides() {
-        double result = 0;
+        CalcuNumberOfSides ViNumSid = new CalcuNumberOfSides();
         for (Figure figure : figures) {
-            result += figure.numberOfSides();
+            figure.accept(ViNumSid);
+            ;
         }
-        return result;
+        return ViNumSid.getNsidesTot();
     }
 
 }
