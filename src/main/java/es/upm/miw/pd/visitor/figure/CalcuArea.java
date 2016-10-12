@@ -16,7 +16,7 @@ public class CalcuArea extends Visitor {
 
     @Override
     public void visitTriangle(Triangle e) {
-        this.areaTot += e.getHeight() * e.getBase();
+        this.areaTot += (e.getHeight() * e.getBase()) / 2;
     }
 
     public double getAreaTot() {
