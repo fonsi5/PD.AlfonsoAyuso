@@ -1,7 +1,7 @@
 package es.upm.miw.pd.text;
 
 public class Caracter extends Texto {
-    
+
     private char character;
 
     public Caracter(char character) {
@@ -14,13 +14,13 @@ public class Caracter extends Texto {
     }
 
     @Override
-    public String print(boolean upper) {
-        if(upper){
-            return String.valueOf(character).toUpperCase();  
-        }else{
-            return String.valueOf(character);   
-        }        
-    
+    public String dibujar(boolean upper) {
+        if (upper) {
+            return String.valueOf(character).toUpperCase();
+        } else {
+            return String.valueOf(character);
+        }
+
     }
 
     @Override
@@ -31,6 +31,11 @@ public class Caracter extends Texto {
     @Override
     public void remove(Texto texto) {
 
+    }
+
+    @Override
+    public String saltoDeLinea() {
+        return "";
     }
 
 }
