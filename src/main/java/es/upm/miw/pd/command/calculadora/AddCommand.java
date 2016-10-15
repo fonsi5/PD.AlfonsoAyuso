@@ -2,7 +2,7 @@ package es.upm.miw.pd.command.calculadora;
 
 import upm.jbb.IO;
 
-public class AddCommand extends Commands{
+public class AddCommand extends Commands {
 
     public AddCommand(Calculator calculator) {
         super(calculator);
@@ -17,7 +17,6 @@ public class AddCommand extends Commands{
     @Override
     public String name() {
         return "Sumar";
-    }    
-    
-    
+    }
+
 }
