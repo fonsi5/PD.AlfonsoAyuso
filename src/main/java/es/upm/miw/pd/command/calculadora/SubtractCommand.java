@@ -2,9 +2,9 @@ package es.upm.miw.pd.command.calculadora;
 
 import upm.jbb.IO;
 
-public class SubstractCommand extends Commands {
+public class SubtractCommand extends Commands {
 
-    public SubstractCommand(Calculator calculator) {
+    public SubtractCommand(Calculator calculator) {
         super(calculator);
     }
 
