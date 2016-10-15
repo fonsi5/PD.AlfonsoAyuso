@@ -4,11 +4,11 @@ import es.upm.miw.pd.command.calculadora.Calculator;
 import es.upm.miw.pd.command.calculadora.Commands;
 import upm.jbb.IO;
 
-public class RestoreComand extends Commands {
+public class RestoreCommand extends Commands {
 
     private GestorMementos<MementoCalculadora> gestMem;
 
-    public RestoreComand(Calculator calculator, GestorMementos<MementoCalculadora> GestorMementos) {
+    public RestoreCommand(Calculator calculator, GestorMementos<MementoCalculadora> GestorMementos) {
         super(calculator);
         this.gestMem = GestorMementos;
     }
